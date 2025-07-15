@@ -13,7 +13,7 @@ Setup:
     pip install anomalib
     anomalib install --option full**
 3. Usage of CUDA cores is recommended if you have an NVIDIA GPU. In case the gpu_torch script fails to identify any available GPU, make sure the PyTorch version installed is CUDA compatible, reinstall the required version using:
-    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118*
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 4. Prepare your Dataset by adding images to the train directory of the data folder. Add both cracked and uncracked images. Anomalib uses a very specific data structure; a reference directory has been added for ease.
 5. Initiate training of the model by running the train_anomalib script; this will save the model checkpoint to the checkpoints folder. If the dataset is too large and consumes more than available VRAM, use the subsequent train2 scripts to continue training the model by picking up the progress from the checkpoint saved earlier.
 6. When training is complete, add test images to the test folder of the data directory.
