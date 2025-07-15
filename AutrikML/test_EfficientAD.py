@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     datamodule = Folder(
         name="my_dataset",
-        root="data/my_dataset/test",#directory where test images exist
+        root="data/test",#directory where test images exist
         normal_dir="good",          #floder with good(non-cracked) images.
         abnormal_dir="anomaly",     #floder with cracked images.
         train_batch_size=1,         #Must be 1 for EfficientAD.
