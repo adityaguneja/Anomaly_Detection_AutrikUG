@@ -18,7 +18,7 @@ if __name__ == "__main__":                  #required for anomalib scripts to wo
     
     datamodule = Folder(
         name="my_dataset",                  #name of folder where dataset exists
-        root="data/my_dataset/train1",      #directory where training images exist in folder
+        root="data/train",      #directory where training images exist in folder
         normal_dir="good",                  #Folder with normal images
         abnormal_dir="anomaly",             #Folder with anomalous images          
         train_batch_size=1,                 #**must be 1 for EfficientAD**              #Adjust batch size as needed - higher:faster training,more VRAM
@@ -39,10 +39,9 @@ if __name__ == "__main__":                  #required for anomalib scripts to wo
         pad_maps=True
     )
 
-    '''model = Padim(evaluator=evaluator)'''
+    '''model = Padim()'''
     '''model = Patchcore(
         backbone="wide_resnet50_2",            #To use other available models
-        layers=["layer2", "layer3"],
         coreset_sampling_ratio=0.1
     )'''
       
