@@ -13,7 +13,7 @@ if __name__ == "__main__":
     
     datamodule = Folder(
         name="my_dataset",
-        root="data/my_dataset/test",
+        root="data/test",
         normal_dir="good",
         abnormal_dir="anomaly",
         train_batch_size=1,    
